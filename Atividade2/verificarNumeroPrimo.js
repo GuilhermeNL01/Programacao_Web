@@ -16,7 +16,7 @@ function verificarNumeroPrimo(n) {
 console.log(verificarNumeroPrimo(0));      
 console.log(verificarNumeroPrimo(1));     
 console.log(verificarNumeroPrimo(2));       
-console.log(verificarNumeroPrimo(3));       
+console.log(verificarNumeroPrimo(3));        
 console.log(verificarNumeroPrimo(7));    
 console.log(verificarNumeroPrimo(83));    
 console.log(verificarNumeroPrimo(100));     
