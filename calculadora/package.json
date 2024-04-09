@@ -1,0 +1,25 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Uma calculadora simples em Node.js usando Express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Programacao_Web"
+  },
+  "keywords": [
+    "calculadora",
+    "soma",
+    "divisao",
+    "multiplicacao",
+    "subtracao"
+  ],
+  "author": "Guilherme Nunes Lobo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
