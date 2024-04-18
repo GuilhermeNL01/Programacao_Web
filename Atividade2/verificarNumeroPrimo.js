@@ -11,7 +11,7 @@ function verificarNumeroPrimo(n) {
     
     return true; // Se não encontrou nenhum divisor, é primo
 }
-
+///
 //teste
 console.log(verificarNumeroPrimo(0));      
 console.log(verificarNumeroPrimo(1));     
