@@ -15,8 +15,9 @@ app.get('/', (req, res) => {
 // Rota para processar os dados do formulário
 app.post('/dados', (req, res) => {
     const { nome, endereco, telefone, data } = req.body;
-    res.redirect(`/dados?nome=${nome}&endereco=${endereco}&telefone=${telefone}&data=${data}`);
+    res.render('dados', { nome, endereco, telefone, data });
 });
+
 
 // Rota para exibir os dados
 app.get('/dados', (req, res) => {
@@ -28,3 +29,8 @@ app.get('/dados', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+// Configurar o mecanismo de visualização e o diretório de visualização
+app.set('view engine', 'html');
+app.set('views', path.join(__dirname, 'views'));
+// Configurar o diretório de visualização para arquivos HTML
+app.use(express.static(path.join(__dirname, 'views')));
